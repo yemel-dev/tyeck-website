@@ -1,8 +1,17 @@
+import Hero from './components/sections/Hero'
+import Services from './components/sections/Services'
+
 function App() {
   return (
-    <h1 className="text-4xl font-bold text-center text-yellow-600 mt-10">
-      TYECK — Votre présence digitale, notre mission
-    </h1>
+    <main>
+      <Hero />
+      <Services />
+      {/* Les prochaines sections viendront s'ajouter ici au fur et à mesure :
+          <Portfolio />
+          <Testimonials />
+          <Contact />
+      */}
+    </main>
   )
 }
 
