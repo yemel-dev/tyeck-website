@@ -1,23 +1,23 @@
-import { useState, type FormEvent } from 'react'
-import { motion } from 'framer-motion'
-import { MessageCircle, MapPin, Clock, Send } from 'lucide-react'
-import { contactInfo } from '../../data/content'
+import { useState, type FormEvent } from "react";
+import { motion } from "framer-motion";
+import { MessageCircle, MapPin, Clock, Send } from "lucide-react";
+import { contactInfo } from "../../data/content";
 
-// Numéro WhatsApp au format international (RDC : +243), sans le 0 initial local
-const whatsappInternational = `243${contactInfo.whatsapp}`
-const whatsappBaseUrl = `https://wa.me/${whatsappInternational}`
+// Numéro WhatsApp au format international (RDC : +237), sans le 0 initial local
+const whatsappInternational = `237${contactInfo.whatsapp}`;
+const whatsappBaseUrl = `https://wa.me/${whatsappInternational}`;
 
 const Contact = () => {
-  const [name, setName] = useState('')
-  const [message, setMessage] = useState('')
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
+    event.preventDefault();
 
-    const text = `Bonjour TYECK, je m'appelle ${name || '—'}.\n\n${message}`
-    const url = `${whatsappBaseUrl}?text=${encodeURIComponent(text)}`
-    window.open(url, '_blank', 'noopener,noreferrer')
-  }
+    const text = `Bonjour TYECK, je m'appelle ${name || "—"}.\n\n${message}`;
+    const url = `${whatsappBaseUrl}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <section
@@ -29,8 +29,8 @@ const Contact = () => {
         <motion.header
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-80px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
           className="flex flex-col gap-4"
         >
           <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#C6F135]">
@@ -43,8 +43,8 @@ const Contact = () => {
             Discutons de votre projet
           </h2>
           <p className="max-w-xl text-[15px] leading-relaxed text-[#A1A1AA]">
-            Décrivez-nous votre besoin, nous vous répondons rapidement sur WhatsApp — pas de
-            formulaire compliqué, pas d'attente inutile.
+            Décrivez-nous votre besoin, nous vous répondons rapidement sur
+            WhatsApp — pas de formulaire compliqué, pas d'attente inutile.
           </p>
         </motion.header>
 
@@ -53,8 +53,8 @@ const Contact = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-80px' }}
-            transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
             className="flex flex-col gap-4"
           >
             <a
@@ -71,7 +71,8 @@ const Contact = () => {
                   WhatsApp Business
                 </span>
                 <span className="block text-sm text-[#0B0B0D]/80">
-                  +{whatsappInternational.slice(0, 3)} {whatsappInternational.slice(3)}
+                  +{whatsappInternational.slice(0, 3)}{" "}
+                  {whatsappInternational.slice(3)}
                 </span>
               </span>
             </a>
@@ -136,12 +137,15 @@ const Contact = () => {
             onSubmit={handleSubmit}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-80px' }}
-            transition={{ duration: 0.5, delay: 0.15, ease: 'easeOut' }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
             className="flex flex-col gap-5 rounded-2xl border border-[#26262A] bg-[#141416] p-6 md:p-8"
           >
             <div className="flex flex-col gap-2">
-              <label htmlFor="contact-name" className="text-sm font-medium text-white">
+              <label
+                htmlFor="contact-name"
+                className="text-sm font-medium text-white"
+              >
                 Votre nom
               </label>
               <input
@@ -157,7 +161,10 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label htmlFor="contact-message" className="text-sm font-medium text-white">
+              <label
+                htmlFor="contact-message"
+                className="text-sm font-medium text-white"
+              >
                 Votre message
               </label>
               <textarea
@@ -181,14 +188,14 @@ const Contact = () => {
             </button>
 
             <p className="text-xs leading-relaxed text-[#A1A1AA]">
-              En cliquant sur "Envoyer", WhatsApp s'ouvre avec votre message pré-rempli — vous
-              gardez la main pour l'envoyer.
+              En cliquant sur "Envoyer", WhatsApp s'ouvre avec votre message
+              pré-rempli — vous gardez la main pour l'envoyer.
             </p>
           </motion.form>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
