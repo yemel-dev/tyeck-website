@@ -10,8 +10,13 @@ export interface Project {
   id: string
   name: string
   url: string
+  displayUrl: string
   description: string
+  category: 'Site vitrine' | 'E-commerce' | 'Application web'
   imageUrl?: string
+  imageAlt: string
+  year: string
+  featured?: boolean
 }
 
 export interface Testimonial {
