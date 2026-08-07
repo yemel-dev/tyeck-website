@@ -3,6 +3,7 @@ import type {
   Project,
   DifferentiationPoint,
   TeamMember,
+  Testimonial,
   ContactInfo,
 } from '../types'
 
@@ -206,6 +207,89 @@ export const teamMembers: TeamMember[] = [
     name: 'Dabove Mefre Wilfried',
     role: 'Directeur du service marketing',
     bio: "Il pilote la stratégie marketing de TYECK et accompagne les clients dans la mise en valeur digitale de leur activité.",
+  },
+]
+
+export const testimonials: Testimonial[] = [
+  {
+    id: 'frank-telecom',
+    clientName: 'Franck Ilunga',
+    company: 'Frank Telecom',
+    city: 'Kinshasa',
+    projectName: 'Frank Telecom',
+    message:
+      "Depuis la mise en ligne de notre site, nos clients trouvent nos offres beaucoup plus facilement. TYECK a su traduire notre activité télécom en un site clair et professionnel.",
+    rating: 5,
+  },
+  {
+    id: 'la-modeuse',
+    clientName: 'Sarah Kabongo',
+    company: 'La Modeuse',
+    city: 'Kinshasa',
+    projectName: 'La Modeuse',
+    message:
+      "Notre boutique en ligne est magnifique et surtout simple à gérer. Les commandes ont augmenté dès les premières semaines après le lancement.",
+    rating: 5,
+  },
+  {
+    id: 'auto-ecole-erfolg',
+    clientName: 'Patrick Mvuezolo',
+    company: 'Auto-École Erfolg',
+    city: 'Brazzaville',
+    projectName: 'Auto-École Erfolg',
+    message:
+      "Le site a modernisé notre image auprès des futurs candidats. Les inscriptions en ligne nous font gagner un temps précieux au quotidien.",
+    rating: 4,
+  },
+  {
+    id: 'boutique-kamga',
+    clientName: 'Chantal Kamga',
+    company: 'Boutique Kamga',
+    city: 'Kinshasa',
+    projectName: 'Boutique Kamga',
+    message:
+      "TYECK a compris nos besoins dès le premier échange. Le tunnel de commande est fluide et nos clients nous le disent souvent.",
+    rating: 5,
+  },
+  {
+    id: 'cozie-bio',
+    clientName: 'Naomie Bemba',
+    company: 'Cozie Bio',
+    city: 'Brazzaville',
+    projectName: 'Cozie Bio',
+    message:
+      "Un site à l'image de notre marque : sobre, sain et rassurant. L'équipe a été à l'écoute jusque dans les moindres détails.",
+    rating: 5,
+  },
+  {
+    id: 'best-business-laptop',
+    clientName: 'Junior Tshibangu',
+    company: 'Best Business Laptop CG',
+    city: 'Kinshasa',
+    projectName: 'Best Business Laptop CG',
+    message:
+      "Nos clients professionnels consultent le catalogue et demandent un devis directement en ligne. Ça a vraiment simplifié notre prospection.",
+    rating: 5,
+  },
+  {
+    id: 'motona-market',
+    clientName: 'Grâce Mabiala',
+    company: 'Motona Market',
+    city: 'Brazzaville',
+    projectName: 'Motona Market',
+    message:
+      "La marketplace fonctionne exactement comme on l'imaginait. Le suivi et l'accompagnement après la mise en ligne ont fait toute la différence.",
+    rating: 4,
+  },
+  {
+    id: 'verocongo',
+    clientName: 'Bienvenu Nsimba',
+    company: 'Vero Congo',
+    city: 'Kinshasa',
+    projectName: 'Vero Congo',
+    message:
+      "Un travail sérieux, livré dans les délais annoncés. Le rapport marketing offert nous a donné des pistes concrètes pour la suite.",
+    rating: 5,
   },
 ]
 

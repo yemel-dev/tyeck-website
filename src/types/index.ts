@@ -26,6 +26,7 @@ export interface Testimonial {
   city: 'Kinshasa' | 'Brazzaville'
   message: string
   rating?: number
+  projectName?: string
 }
 
 export interface DifferentiationPoint {
