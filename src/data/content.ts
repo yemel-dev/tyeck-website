@@ -2,6 +2,7 @@ import type {
   Service,
   Project,
   DifferentiationPoint,
+  TeamMember,
   ContactInfo,
 } from '../types'
 
@@ -164,6 +165,47 @@ export const differentiators: DifferentiationPoint[] = [
     title: 'Proximité',
     description:
       'Réponse rapide via WhatsApp Business, un contact humain identifié.',
+  },
+  {
+    id: 'hebergement-maintenance',
+    title: 'Hébergement & maintenance offerts',
+    description:
+      "1 an d'hébergement et de maintenance offert avec chaque site réalisé, sans frais cachés.",
+  },
+  {
+    id: 'referencement-seo',
+    title: 'Référencement inclus',
+    description:
+      "Chaque site est référencé pour que Google le trouve plus facilement dès sa mise en ligne.",
+  },
+  {
+    id: 'rapport-marketing',
+    title: 'Rapport marketing offert',
+    description:
+      "Un rapport gratuit pour vous aider à optimiser votre stratégie marketing à partir du site réalisé.",
+  },
+]
+
+export const teamMembers: TeamMember[] = [
+  {
+    id: 'tiagno-foko-darwin',
+    name: 'Tiagno Foko Darwin',
+    role: 'Développeur Fullstack & Fondateur',
+    bio: "Fondateur de TYECK, il conçoit et développe l'ensemble des solutions web de l'agence, du back-end à l'interface finale livrée aux clients.",
+    isFounder: true,
+  },
+  {
+    id: 'yemeli-kemeka-steave-russel',
+    name: 'Yemeli Kemeka Steave Russel',
+    role: 'Ingénieur IA, Développeur Fullstack & Co-fondateur',
+    bio: "Co-fondateur de TYECK, il combine développement fullstack et intelligence artificielle pour intégrer des solutions plus intelligentes et plus performantes dans les projets de l'agence.",
+    isFounder: true,
+  },
+  {
+    id: 'dabove-mefre-wilfried',
+    name: 'Dabove Mefre Wilfried',
+    role: 'Directeur du service marketing',
+    bio: "Il pilote la stratégie marketing de TYECK et accompagne les clients dans la mise en valeur digitale de leur activité.",
   },
 ]
 

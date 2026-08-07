@@ -34,6 +34,14 @@ export interface DifferentiationPoint {
   description: string
 }
 
+export interface TeamMember {
+  id: string
+  name: string
+  role: string
+  bio: string
+  isFounder?: boolean
+}
+
 export interface ContactInfo {
   whatsapp: string
   address: string
