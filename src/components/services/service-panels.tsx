@@ -11,7 +11,7 @@ const glass =
 
 /* ---------------- Carte 1 : Sites Vitrines & E-commerce ---------------- */
 export function EcommercePanels() {
-  const products = ['45 000 FCFA', '32 000 FCFA', '78 000 FCFA']
+  const products = ['230$', '270$', '300$']
   return (
     <div className="absolute inset-0">
       {/* Mini navigateur */}

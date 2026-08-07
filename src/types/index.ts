@@ -45,6 +45,7 @@ export interface TeamMember {
 
 export interface ContactInfo {
   whatsapp: string
+  facebook: string
   address: string
   city: string
   hours: string

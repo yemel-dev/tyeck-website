@@ -1,21 +1,21 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
-import logo from "../../assets/logo/tyeck-logo.svg";
-import { contactInfo } from "../../data/content";
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Menu, X } from 'lucide-react'
+import logo from '../../assets/logo/tyeck-logo.svg'
+import { contactInfo } from '../../data/content'
 
-const whatsappUrl = `https://wa.me/243${contactInfo.whatsapp}`;
+const whatsappUrl = `https://wa.me/243${contactInfo.whatsapp}`
 
 const navLinks = [
-  { label: "Accueil", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "Nos réalisations", href: "#realisations" },
-  { label: "À propos", href: "#about" },
-  { label: "Contact", href: "#contact" },
-];
+  { label: 'Accueil', href: '#home' },
+  { label: 'Services', href: '#services' },
+  { label: 'Réalisations', href: '#realisations' },
+  { label: 'À propos', href: '#about' },
+  { label: 'Contact', href: '#contact' },
+]
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <motion.nav
@@ -42,8 +42,8 @@ const Navbar = () => {
               href={link.href}
               className={
                 index === 0
-                  ? "text-sm font-medium text-black bg-white rounded-full px-4 py-1.5 transition-all"
-                  : "text-sm font-medium text-gray-300 hover:text-white px-4 py-1.5 transition-colors"
+                  ? 'text-sm font-medium text-black bg-white rounded-full px-4 py-1.5 transition-all'
+                  : 'text-sm font-medium text-gray-300 hover:text-white px-4 py-1.5 transition-colors'
               }
             >
               {link.label}
@@ -65,7 +65,7 @@ const Navbar = () => {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-white/10 border border-white/10 text-white shrink-0"
-          aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
+          aria-label={isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
         >
           {isOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
@@ -76,9 +76,9 @@ const Navbar = () => {
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
+            animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="md:hidden overflow-hidden bg-[#0B0B0D]/95 backdrop-blur-md border-t border-white/10"
           >
             <div className="flex flex-col px-4 py-4 gap-1">
@@ -89,8 +89,8 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={
                     index === 0
-                      ? "text-sm font-medium text-black bg-white rounded-full px-4 py-2.5 text-center"
-                      : "text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-full px-4 py-2.5 text-center transition-colors"
+                      ? 'text-sm font-medium text-black bg-white rounded-full px-4 py-2.5 text-center'
+                      : 'text-sm font-medium text-gray-300 hover:text-white hover:bg-white/5 rounded-full px-4 py-2.5 text-center transition-colors'
                   }
                 >
                   {link.label}
@@ -110,7 +110,7 @@ const Navbar = () => {
         )}
       </AnimatePresence>
     </motion.nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

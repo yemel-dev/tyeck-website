@@ -76,6 +76,32 @@ const Contact = () => {
               </span>
             </a>
 
+            <a
+              href={contactInfo.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-4 rounded-2xl border border-[#26262A] bg-[#141416] p-5 transition-colors duration-300 hover:border-white/20"
+            >
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#1c1c20]">
+                <svg
+                  viewBox="0 0 24 24"
+                  className="size-5 text-[#C6F135]"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M22 12.06C22 6.505 17.523 2 12 2S2 6.505 2 12.06c0 5.02 3.657 9.184 8.438 9.94v-7.03H7.898v-2.91h2.54V9.845c0-2.523 1.492-3.917 3.777-3.917 1.094 0 2.238.197 2.238.197v2.476h-1.26c-1.243 0-1.63.775-1.63 1.57v1.888h2.773l-.443 2.91h-2.33V22c4.78-.756 8.437-4.92 8.437-9.94Z" />
+                </svg>
+              </span>
+              <span>
+                <span className="block text-sm font-semibold uppercase tracking-[0.1em] text-white">
+                  Facebook
+                </span>
+                <span className="mt-1 block text-sm leading-relaxed text-[#A1A1AA]">
+                  Suivez notre page et nos actualités
+                </span>
+              </span>
+            </a>
+
             <div className="flex items-start gap-4 rounded-2xl border border-[#26262A] bg-[#141416] p-5">
               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#1c1c20]">
                 <MapPin className="size-5 text-[#C6F135]" aria-hidden="true" />
