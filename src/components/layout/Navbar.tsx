@@ -2,6 +2,9 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import logo from '../../assets/logo/tyeck-logo.svg'
+import { contactInfo } from '../../data/content'
+
+const whatsappUrl = `https://wa.me/243${contactInfo.whatsapp}`
 
 const navLinks = [
   { label: 'Accueil', href: '#home' },
@@ -50,7 +53,9 @@ const Navbar = () => {
 
         {/* CTA droite — visible seulement à partir de sm */}
         <a
-          href="#contact"
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden sm:inline-block px-5 py-2 sm:px-6 sm:py-2.5 rounded-full bg-white text-[#0B0B0D] font-semibold text-sm hover:scale-105 transition-transform duration-300"
         >
           Nous contacter
@@ -92,7 +97,9 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="#contact"
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
                 className="mt-2 px-4 py-2.5 rounded-full bg-white text-[#0B0B0D] font-semibold text-sm text-center"
               >
