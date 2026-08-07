@@ -6,6 +6,16 @@ import type {
   Testimonial,
   ContactInfo,
 } from '../types'
+import frankTelecomImg from '../assets/images/projects/frank-telecom.png'
+import laModeuseImg from '../assets/images/projects/la-modeuse.png'
+import autoEcoleErfolgImg from '../assets/images/projects/auto-ecole-erfolg.png'
+import boutiqueKamgaImg from '../assets/images/projects/boutique-kamga.png'
+import cozieBioImg from '../assets/images/projects/cozie-bio.png'
+import bestBusinessLaptopImg from '../assets/images/projects/best-business-laptop.png'
+import glassesUsaImg from '../assets/images/projects/glassesusa.png'
+import freshaImg from '../assets/images/projects/fresha.png'
+import motonaMarketImg from '../assets/images/projects/motona-market.png'
+import veroCongoImg from '../assets/images/projects/verocongo.png'
 
 export const companyInfo = {
   name: 'TYECK',
@@ -52,6 +62,7 @@ export const projects: Project[] = [
     displayUrl: 'franktelecom.com',
     description: 'Présence digitale professionnelle pour une entreprise télécom : présentation des offres et contact commercial.',
     category: 'Site vitrine',
+    imageUrl: frankTelecomImg,
     imageAlt: "Page d'accueil du site Frank Telecom",
     year: '2025',
     featured: true,
@@ -63,6 +74,7 @@ export const projects: Project[] = [
     displayUrl: 'lamodeuse.com',
     description: 'Boutique en ligne de mode : catalogue produits, fiches détaillées et parcours d\'achat pensé pour la conversion.',
     category: 'E-commerce',
+    imageUrl: laModeuseImg,
     imageAlt: "Page d'accueil de la boutique en ligne La Modeuse",
     year: '2025',
   },
@@ -73,6 +85,7 @@ export const projects: Project[] = [
     displayUrl: 'auto-ecole-erfolg.com',
     description: "Site vitrine pour une auto-école : présentation des formules de formation, inscription en ligne et prise de contact.",
     category: 'Site vitrine',
+    imageUrl: autoEcoleErfolgImg,
     imageAlt: "Page d'accueil du site Auto-École Erfolg",
     year: '2024',
   },
@@ -83,6 +96,7 @@ export const projects: Project[] = [
     displayUrl: 'boutique-kamga-frontend.vercel.app',
     description: "Boutique en ligne avec catalogue produits, panier et tunnel de commande simplifié.",
     category: 'E-commerce',
+    imageUrl: boutiqueKamgaImg,
     imageAlt: "Page d'accueil de la Boutique Kamga",
     year: '2024',
   },
@@ -93,6 +107,7 @@ export const projects: Project[] = [
     displayUrl: 'cozie-bio.com',
     description: "Site e-commerce pour une marque de produits bio : mise en avant des gammes et argumentaire produit.",
     category: 'E-commerce',
+    imageUrl: cozieBioImg,
     imageAlt: "Page d'accueil du site Cozie Bio",
     year: '2024',
   },
@@ -103,6 +118,7 @@ export const projects: Project[] = [
     displayUrl: 'bestbusinesslaptopcg.com',
     description: 'Site vitrine avec catalogue pour un importateur de matériel informatique. Les clients consultent les configurations disponibles et demandent un devis.',
     category: 'Site vitrine',
+    imageUrl: bestBusinessLaptopImg,
     imageAlt: "Page d'accueil du site Best Business Laptop CG",
     year: '2024',
   },
@@ -113,6 +129,7 @@ export const projects: Project[] = [
     displayUrl: 'glassesusa.com',
     description: "Plateforme e-commerce de lunettes : catalogue produit riche, filtres avancés et essayage virtuel.",
     category: 'E-commerce',
+    imageUrl: glassesUsaImg,
     imageAlt: "Page d'accueil du site GlassesUSA",
     year: '2023',
   },
@@ -123,6 +140,7 @@ export const projects: Project[] = [
     displayUrl: 'fresha.com',
     description: "Plateforme de réservation en ligne pour instituts de beauté et bien-être, avec gestion d'agenda intégrée.",
     category: 'Application web',
+    imageUrl: freshaImg,
     imageAlt: "Page d'accueil de la plateforme Fresha",
     year: '2023',
   },
@@ -133,6 +151,7 @@ export const projects: Project[] = [
     displayUrl: 'motonamarket.com',
     description: "Marketplace dédiée à la vente de motos et pièces détachées entre particuliers et professionnels.",
     category: 'E-commerce',
+    imageUrl: motonaMarketImg,
     imageAlt: "Page d'accueil du site Motona Market",
     year: '2023',
   },
@@ -143,6 +162,7 @@ export const projects: Project[] = [
     displayUrl: 'verocongo.com',
     description: "Site vitrine présentant l'activité et les services de l'entreprise, avec formulaire de contact.",
     category: 'Site vitrine',
+    imageUrl: veroCongoImg,
     imageAlt: "Page d'accueil du site Vero Congo",
     year: '2023',
   },
